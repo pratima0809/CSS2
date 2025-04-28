@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS2-Html</title>
+        <style>
+            .profile-card {
+                display: flex;
+                align-items: center;
+                background-color: #f0f8ff;
+                padding: 20px;
+                margin: 20px;
+                border: 1px solid #ccc;
+                border-radius: 15px;
+                max-width: 500px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            }
+  
+            .profile-image {
+                width: 100px;
+                height: 100px;
+                object-fit: cover;
+                border-radius: 50%;
+                margin-right: 20px;
+                border: 2px solid #4caf50;
+            }
+  
+            .profile-info h2 {
+                margin: 0;
+                font-size: 24px;
+                color: #333;
+            }
+  
+            .profile-info p {
+                margin-top: 8px;
+                font-size: 16px;
+                color: #666;
+            }
+
+            .navbar {
+  display: flex;
+  justify-content: center;
+  background-color: #333;
+  padding: 10px;
+}
+
+.navbar a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.navbar a:hover {
+  background-color: #575757;
+  border-radius: 5px;
+}
+
+/* Responsive: Stack vertically on small screens */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.container {
+  display: flex;
+  min-height: 80vh;
+}
+
+.sidebar {
+  background-color: #f4f4f4;
+  padding: 20px;
+  width: 200px;
+}
+
+.left {
+  background-color: #ffd700; /* Gold color */
+}
+
+.right {
+  background-color: #87ceeb; /* Sky Blue */
+}
+
+.main-content {
+  flex: 1;
+  background-color: #fff;
+  padding: 20px;
+}
+
+/* Responsive: Stack columns vertically */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  
+  .sidebar {
+    width: 100%;
+  }
+}
+
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 20px;
+}
+
+/* No extra media query needed — text is already centered! */
+
+@media (max-width: 768px) {
+  /* Styles for tablets and phones */
+}
+        </style>
+    </head>
+    <body>
+        <div class="profile-card">
+            <img src="https://via.placeholder.com/100" alt="Profile Picture" class="profile-image">
+            <div class="profile-info">
+              <h2>John Doe</h2>
+              <p>Frontend Developer | Loves coding and coffee ☕</p>
+            </div>
+        </div>
+    </body>
+</html>
+
+<nav class="navbar">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+  </nav>
+
+
+  <div class="container">
+    <div class="sidebar left">Left Sidebar</div>
+    <div class="main-content">Main Content</div>
+    <div class="sidebar right">Right Sidebar</div>
+  </div>
+
+  <footer class="footer">
+    &copy; 2025 Your Website. All Rights Reserved.
+  </footer>
